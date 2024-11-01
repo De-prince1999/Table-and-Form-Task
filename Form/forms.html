@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+
+<form action="/google.html" method="POST">
+    <fieldset>
+        <legend>Personal Information</legend>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select><br><br>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Message</legend>
+        
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Write something here..."></textarea>
+        
+    </fieldset>
+    
+    <input type="submit" value="Submit">
+</form>
+
+<br>
+<form>
+    <input type="checkbox" name="Option1" id="Webdev" value="Webdev" >
+    <label for="WedDev">Web Dev</label>
+    <br>
+    <input type="checkbox" name="option2" id="GameDev" value="GameDev">
+    <label for="GameDev">Game Dev</label>
+    <br>
+    <input type="checkbox" name="option3" id="Cyber" value="Cyber">
+    <label for="Cyber"> Cyber</label>
+    <br>
+    <input type="checkbox" name="option4" id="Data" value="Data">
+    <label for="Data">Data</label>
+    <br>
+    <input type="checkbox" name="option5" id="DataAnalytics" value="DataAnalytics">
+    <label for="DataAnalytics">Data Analytics</label>
+
+    <br>
+    <label for="Country">Select your Country</label>
+    <select name="Country" id="Country">
+        <option value="Nigeria">Nigeria</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Rwanda">Rwanda</option>
+    </select>
+    
+</form>
+
+</body>
+</html>
